@@ -20,7 +20,7 @@ Boolean isST()       { return (getPlatform() == "SmartThings") }
 Boolean isWS()       { return false }
 
 metadata {
-    definition (name: "Echo Speaks Device", namespace: "tonesto7", author: "Anthony Santilli", mnmn: "SmartThings", vid: "generic-music-player") {
+    definition (name: "Echo Speaks Device", namespace: "jskarp5953", author: "Anthony Santilli", mnmn: "SmartThings", vid: "generic-music-player") {
         capability "Audio Mute" // Not Compatible with Hubitat
         capability "Audio Notification"
         capability "Audio Track Data" // To support SharpTools.io Album Art feature
@@ -170,189 +170,189 @@ metadata {
             }
         }
         standardTile("deviceStatus", "device.deviceStatus", height: 1, width: 1, inactiveLabel: false, decoration: "flat") {
-            state("paused_unknown", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/unknown.png", backgroundColor: "#cccccc")
-            state("playing_unknown", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/unknown.png", backgroundColor: "#00a0dc")
-            state("stopped_unknown", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/unknown.png")
+            state("paused_unknown", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/unknown.png", backgroundColor: "#cccccc")
+            state("playing_unknown", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/unknown.png", backgroundColor: "#00a0dc")
+            state("stopped_unknown", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/unknown.png")
             // ECHO (GEN1)
-            state("paused_echo_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_gen1.png", backgroundColor: "#cccccc")
-            state("playing_echo_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_gen1.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_gen1.png")
+            state("paused_echo_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_gen1.png", backgroundColor: "#cccccc")
+            state("playing_echo_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_gen1.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_gen1.png")
             // ECHO (GEN2)
-            state("paused_echo_gen2", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_gen2.png", backgroundColor: "#cccccc")
-            state("playing_echo_gen2", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_gen2.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_gen2", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_gen2.png")
+            state("paused_echo_gen2", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_gen2.png", backgroundColor: "#cccccc")
+            state("playing_echo_gen2", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_gen2.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_gen2", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_gen2.png")
             // ECHO (GEN3)
-            state("paused_echo_gen3", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_gen3.png", backgroundColor: "#cccccc")
-            state("playing_echo_gen3", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_gen3.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_gen3", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_gen3.png")
+            state("paused_echo_gen3", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_gen3.png", backgroundColor: "#cccccc")
+            state("playing_echo_gen3", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_gen3.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_gen3", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_gen3.png")
             // ECHO PLUS (GEN1)
-            state("paused_echo_plus_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_plus_gen1.png", backgroundColor: "#cccccc")
-            state("playing_echo_plus_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_plus_gen1.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_plus_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_plus_gen1.png")
+            state("paused_echo_plus_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_plus_gen1.png", backgroundColor: "#cccccc")
+            state("playing_echo_plus_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_plus_gen1.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_plus_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_plus_gen1.png")
             // ECHO PLUS (GEN2)
-            state("paused_echo_plus_gen2", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_plus_gen2.png", backgroundColor: "#cccccc")
-            state("playing_echo_plus_gen2", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_plus_gen2.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_plus_gen2", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_plus_gen2.png")
+            state("paused_echo_plus_gen2", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_plus_gen2.png", backgroundColor: "#cccccc")
+            state("playing_echo_plus_gen2", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_plus_gen2.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_plus_gen2", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_plus_gen2.png")
             // ECHO DOT (GEN1)
-            state("paused_echo_dot_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_dot_gen1.png", backgroundColor: "#cccccc")
-            state("playing_echo_dot_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_dot_gen1.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_dot_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_dot_gen1.png")
+            state("paused_echo_dot_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_dot_gen1.png", backgroundColor: "#cccccc")
+            state("playing_echo_dot_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_dot_gen1.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_dot_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_dot_gen1.png")
             // ECHO DOT (GEN2)
-            state("paused_echo_dot_gen2", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_dot_gen2.png", backgroundColor: "#cccccc")
-            state("playing_echo_dot_gen2", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_dot_gen2.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_dot_gen2", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_dot_gen2.png")
+            state("paused_echo_dot_gen2", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_dot_gen2.png", backgroundColor: "#cccccc")
+            state("playing_echo_dot_gen2", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_dot_gen2.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_dot_gen2", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_dot_gen2.png")
             // ECHO DOT (GEN3)
-            state("paused_echo_dot_gen3", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_dot_gen3.png", backgroundColor: "#cccccc")
-            state("playing_echo_dot_gen3", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_dot_gen3.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_dot_gen3", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_dot_gen3.png")
+            state("paused_echo_dot_gen3", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_dot_gen3.png", backgroundColor: "#cccccc")
+            state("playing_echo_dot_gen3", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_dot_gen3.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_dot_gen3", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_dot_gen3.png")
             // ECHO DOT CLOCK (GEN1)
-            state("paused_echo_dot_clock", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_dot_clock.png", backgroundColor: "#cccccc")
-            state("playing_echo_dot_clock", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_dot_clock.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_dot_clock", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_dot_clock.png")
+            state("paused_echo_dot_clock", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_dot_clock.png", backgroundColor: "#cccccc")
+            state("playing_echo_dot_clock", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_dot_clock.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_dot_clock", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_dot_clock.png")
             // ECHO SPOT (GEN1)
-            state("paused_echo_spot_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_spot_gen1.png", backgroundColor: "#cccccc")
-            state("playing_echo_spot_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_spot_gen1.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_spot_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_spot_gen1.png")
+            state("paused_echo_spot_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_spot_gen1.png", backgroundColor: "#cccccc")
+            state("playing_echo_spot_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_spot_gen1.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_spot_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_spot_gen1.png")
             // ECHO SHOW (GEN1)
-            state("paused_echo_show_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_show_gen1.png", backgroundColor: "#cccccc")
-            state("playing_echo_show_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_show_gen1.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_show_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_show_gen1.png")
+            state("paused_echo_show_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_show_gen1.png", backgroundColor: "#cccccc")
+            state("playing_echo_show_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_show_gen1.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_show_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_show_gen1.png")
             // ECHO SHOW (GEN2)
-            state("paused_echo_show_gen2", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_show_gen2.png", backgroundColor: "#cccccc")
-            state("playing_echo_show_gen2", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_show_gen2.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_show_gen2", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_show_gen2.png")
+            state("paused_echo_show_gen2", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_show_gen2.png", backgroundColor: "#cccccc")
+            state("playing_echo_show_gen2", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_show_gen2.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_show_gen2", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_show_gen2.png")
             // ECHO SHOW 5 (GEN1)
-            state("paused_echo_show_5", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_show_5.png", backgroundColor: "#cccccc")
-            state("playing_echo_show_5", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_show_5.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_show_5", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_show_5.png")
+            state("paused_echo_show_5", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_show_5.png", backgroundColor: "#cccccc")
+            state("playing_echo_show_5", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_show_5.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_show_5", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_show_5.png")
             // ECHO SHOW 8 (GEN1)
-            state("paused_echo_show_8", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_show_8.png", backgroundColor: "#cccccc")
-            state("playing_echo_show_8", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_show_8.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_show_8", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_show_8.png")
+            state("paused_echo_show_8", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_show_8.png", backgroundColor: "#cccccc")
+            state("playing_echo_show_8", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_show_8.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_show_8", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_show_8.png")
             // ECHO TAP (GEN1)
-            state("paused_echo_tap", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_tap.png", backgroundColor: "#cccccc")
-            state("playing_echo_tap", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_tap.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_tap", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_tap.png")
+            state("paused_echo_tap", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_tap.png", backgroundColor: "#cccccc")
+            state("playing_echo_tap", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_tap.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_tap", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_tap.png")
             // ECHO FLEX (GEN1)
-            state("paused_echo_flex", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_flex.png", backgroundColor: "#cccccc")
-            state("playing_echo_flex", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_flex.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_flex", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_flex.png")
+            state("paused_echo_flex", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_flex.png", backgroundColor: "#cccccc")
+            state("playing_echo_flex", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_flex.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_flex", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_flex.png")
             // ECHO STUDIO (GEN1)
-            state("paused_echo_studio", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_studio.png", backgroundColor: "#cccccc")
-            state("playing_echo_studio", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_studio.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_studio", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_studio.png")
+            state("paused_echo_studio", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_studio.png", backgroundColor: "#cccccc")
+            state("playing_echo_studio", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_studio.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_studio", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_studio.png")
             // ECHO LINK (GEN1)
-            state("paused_echo_link", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_link.png", backgroundColor: "#cccccc")
-            state("playing_echo_link", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_link.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_link", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_link.png")
+            state("paused_echo_link", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_link.png", backgroundColor: "#cccccc")
+            state("playing_echo_link", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_link.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_link", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_link.png")
             // ECHO AUTO (GEN1)
-            state("paused_echo_auto", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_auto.png", backgroundColor: "#cccccc")
-            state("playing_echo_auto", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_auto.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_auto", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_auto.png")
+            state("paused_echo_auto", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_auto.png", backgroundColor: "#cccccc")
+            state("playing_echo_auto", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_auto.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_auto", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_auto.png")
             // ECHO BUDS (GEN1)
-            state("paused_echo_buds", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_buds.png", backgroundColor: "#cccccc")
-            state("playing_echo_buds", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_buds.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_buds", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_buds.png")
+            state("paused_echo_buds", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_buds.png", backgroundColor: "#cccccc")
+            state("playing_echo_buds", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_buds.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_buds", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_buds.png")
             // ECHO INPUT (GEN1)
-            state("paused_echo_input", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_input.png", backgroundColor: "#cccccc")
-            state("playing_echo_input", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_input.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_input", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_input.png")
+            state("paused_echo_input", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_input.png", backgroundColor: "#cccccc")
+            state("playing_echo_input", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_input.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_input", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_input.png")
 
-            state("paused_amazon_tablet", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/amazon_tablet.png", backgroundColor: "#cccccc")
-            state("playing_amazon_tablet", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/amazon_tablet.png", backgroundColor: "#00a0dc")
-            state("stopped_amazon_tablet", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/amazon_tablet.png")
+            state("paused_amazon_tablet", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/amazon_tablet.png", backgroundColor: "#cccccc")
+            state("playing_amazon_tablet", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/amazon_tablet.png", backgroundColor: "#00a0dc")
+            state("stopped_amazon_tablet", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/amazon_tablet.png")
 
-            state("paused_echo_sub_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_sub_gen1.png", backgroundColor: "#cccccc")
-            state("playing_echo_sub_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_sub_gen1.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_sub_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_sub_gen1.png")
+            state("paused_echo_sub_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_sub_gen1.png", backgroundColor: "#cccccc")
+            state("playing_echo_sub_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_sub_gen1.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_sub_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_sub_gen1.png")
 
-            state("paused_firetv_cube", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/firetv_cube.png", backgroundColor: "#cccccc")
-            state("playing_firetv_cube", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/firetv_cube.png", backgroundColor: "#00a0dc")
-            state("stopped_firetv_cube", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/firetv_cube.png")
+            state("paused_firetv_cube", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/firetv_cube.png", backgroundColor: "#cccccc")
+            state("playing_firetv_cube", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/firetv_cube.png", backgroundColor: "#00a0dc")
+            state("stopped_firetv_cube", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/firetv_cube.png")
 
-            state("paused_firetv_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/firetv_gen1.png", backgroundColor: "#cccccc")
-            state("playing_firetv_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/firetv_gen1.png", backgroundColor: "#00a0dc")
-            state("stopped_firetv_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/firetv_gen1.png")
+            state("paused_firetv_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/firetv_gen1.png", backgroundColor: "#cccccc")
+            state("playing_firetv_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/firetv_gen1.png", backgroundColor: "#00a0dc")
+            state("stopped_firetv_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/firetv_gen1.png")
 
-            state("paused_insignia_firetv", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/insignia_firetv.png", backgroundColor: "#cccccc")
-            state("playing_insignia_firetv", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/insignia_firetv.png", backgroundColor: "#00a0dc")
-            state("stopped_insignia_firetv", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/insignia_firetv.png")
+            state("paused_insignia_firetv", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/insignia_firetv.png", backgroundColor: "#cccccc")
+            state("playing_insignia_firetv", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/insignia_firetv.png", backgroundColor: "#00a0dc")
+            state("stopped_insignia_firetv", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/insignia_firetv.png")
 
-            state("paused_toshiba_firetv", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/toshiba_firetv.png", backgroundColor: "#cccccc")
-            state("playing_toshiba_firetv", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/toshiba_firetv.png", backgroundColor: "#00a0dc")
-            state("stopped_toshiba_firetv", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/toshiba_firetv.png")
+            state("paused_toshiba_firetv", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/toshiba_firetv.png", backgroundColor: "#cccccc")
+            state("playing_toshiba_firetv", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/toshiba_firetv.png", backgroundColor: "#00a0dc")
+            state("stopped_toshiba_firetv", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/toshiba_firetv.png")
 
-            state("paused_tablet_hd10", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/tablet_hd10.png", backgroundColor: "#cccccc")
-            state("playing_tablet_hd10", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/tablet_hd10.png", backgroundColor: "#00a0dc")
-            state("stopped_tablet_hd10", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/tablet_hd10.png")
+            state("paused_tablet_hd10", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/tablet_hd10.png", backgroundColor: "#cccccc")
+            state("playing_tablet_hd10", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/tablet_hd10.png", backgroundColor: "#00a0dc")
+            state("stopped_tablet_hd10", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/tablet_hd10.png")
 
-            state("paused_firetv_stick_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/firetv_stick_gen1.png", backgroundColor: "#cccccc")
-            state("playing_firetv_stick_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/firetv_stick_gen1.png", backgroundColor: "#00a0dc")
-            state("stopped_firetv_stick_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/firetv_stick_gen1.png")
+            state("paused_firetv_stick_gen1", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/firetv_stick_gen1.png", backgroundColor: "#cccccc")
+            state("playing_firetv_stick_gen1", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/firetv_stick_gen1.png", backgroundColor: "#00a0dc")
+            state("stopped_firetv_stick_gen1", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/firetv_stick_gen1.png")
 
-            state("paused_echo_wha", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_wha.png", backgroundColor: "#cccccc")
-            state("playing_echo_wha", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_wha.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_wha", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_wha.png")
+            state("paused_echo_wha", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_wha.png", backgroundColor: "#cccccc")
+            state("playing_echo_wha", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_wha.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_wha", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_wha.png")
 
-            state("paused_echo_auto", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_auto.png", backgroundColor: "#cccccc")
-            state("playing_echo_auto", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_auto.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_auto", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_auto.png")
+            state("paused_echo_auto", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_auto.png", backgroundColor: "#cccccc")
+            state("playing_echo_auto", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_auto.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_auto", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_auto.png")
 
-            state("paused_echo_input", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_input.png", backgroundColor: "#cccccc")
-            state("playing_echo_input", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_input.png", backgroundColor: "#00a0dc")
-            state("stopped_echo_input", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/echo_input.png")
+            state("paused_echo_input", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_input.png", backgroundColor: "#cccccc")
+            state("playing_echo_input", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_input.png", backgroundColor: "#00a0dc")
+            state("stopped_echo_input", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/echo_input.png")
 
-            state("paused_one_link", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/one_link.png", backgroundColor: "#cccccc")
-            state("playing_one_link", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/one_link.png", backgroundColor: "#00a0dc")
-            state("stopped_one_link", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/one_link.png")
+            state("paused_one_link", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/one_link.png", backgroundColor: "#cccccc")
+            state("playing_one_link", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/one_link.png", backgroundColor: "#00a0dc")
+            state("stopped_one_link", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/one_link.png")
 
-            state("paused_sonos_generic", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/sonos_generic.png", backgroundColor: "#cccccc")
-            state("playing_sonos_generic", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/sonos_generic.png", backgroundColor: "#00a0dc")
-            state("stopped_sonos_generic", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/sonos_generic.png")
+            state("paused_sonos_generic", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/sonos_generic.png", backgroundColor: "#cccccc")
+            state("playing_sonos_generic", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/sonos_generic.png", backgroundColor: "#00a0dc")
+            state("stopped_sonos_generic", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/sonos_generic.png")
 
-            state("paused_sonos_beam", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/sonos_beam.png", backgroundColor: "#cccccc")
-            state("playing_sonos_beam", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/sonos_beam.png", backgroundColor: "#00a0dc")
-            state("stopped_sonos_beam", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/sonos_beam.png")
+            state("paused_sonos_beam", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/sonos_beam.png", backgroundColor: "#cccccc")
+            state("playing_sonos_beam", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/sonos_beam.png", backgroundColor: "#00a0dc")
+            state("stopped_sonos_beam", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/sonos_beam.png")
 
-            state("paused_alexa_windows", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/alexa_windows.png", backgroundColor: "#cccccc")
-            state("playing_alexa_windows", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/alexa_windows.png", backgroundColor: "#00a0dc")
-            state("stopped_alexa_windows", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/alexa_windows.png")
+            state("paused_alexa_windows", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/alexa_windows.png", backgroundColor: "#cccccc")
+            state("playing_alexa_windows", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/alexa_windows.png", backgroundColor: "#00a0dc")
+            state("stopped_alexa_windows", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/alexa_windows.png")
 
-            state("paused_dash_wand", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/dash_wand.png", backgroundColor: "#cccccc")
-            state("playing_dash_wand", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/dash_wand.png", backgroundColor: "#00a0dc")
-            state("stopped_dash_wand", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/dash_wand.png")
+            state("paused_dash_wand", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/dash_wand.png", backgroundColor: "#cccccc")
+            state("playing_dash_wand", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/dash_wand.png", backgroundColor: "#00a0dc")
+            state("stopped_dash_wand", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/dash_wand.png")
 
-            state("paused_fabriq_chorus", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/fabriq_chorus.png", backgroundColor: "#cccccc")
-            state("playing_fabriq_chorus", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/fabriq_chorus.png", backgroundColor: "#00a0dc")
-            state("stopped_fabriq_chorus", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/fabriq_chorus.png")
+            state("paused_fabriq_chorus", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/fabriq_chorus.png", backgroundColor: "#cccccc")
+            state("playing_fabriq_chorus", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/fabriq_chorus.png", backgroundColor: "#00a0dc")
+            state("stopped_fabriq_chorus", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/fabriq_chorus.png")
 
-            state("paused_fabriq_riff", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/fabriq_riff.png", backgroundColor: "#cccccc")
-            state("playing_fabriq_riff", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/fabriq_riff.png", backgroundColor: "#00a0dc")
-            state("stopped_fabriq_riff", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/fabriq_riff.png")
+            state("paused_fabriq_riff", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/fabriq_riff.png", backgroundColor: "#cccccc")
+            state("playing_fabriq_riff", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/fabriq_riff.png", backgroundColor: "#00a0dc")
+            state("stopped_fabriq_riff", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/fabriq_riff.png")
 
-            state("paused_facebook_portal", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/facebook_portal.png", backgroundColor: "#cccccc")
-            state("playing_facebook_portal", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/facebook_portal.png", backgroundColor: "#00a0dc")
-            state("stopped_facebook_portal", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/facebook_portal.png")
+            state("paused_facebook_portal", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/facebook_portal.png", backgroundColor: "#cccccc")
+            state("playing_facebook_portal", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/facebook_portal.png", backgroundColor: "#00a0dc")
+            state("stopped_facebook_portal", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/facebook_portal.png")
 
-            state("paused_facebook_portal_plus", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/facebook_portal_plus.png", backgroundColor: "#cccccc")
-            state("playing_facebook_portal_plus", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/facebook_portal_plus.png", backgroundColor: "#00a0dc")
-            state("stopped_facebook_portal_plus", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/facebook_portal_plus.png")
+            state("paused_facebook_portal_plus", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/facebook_portal_plus.png", backgroundColor: "#cccccc")
+            state("playing_facebook_portal_plus", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/facebook_portal_plus.png", backgroundColor: "#00a0dc")
+            state("stopped_facebook_portal_plus", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/facebook_portal_plus.png")
 
-            state("paused_halo_speaker", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/halo_speaker.png", backgroundColor: "#cccccc")
-            state("playing_halo_speaker", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/halo_speaker.png", backgroundColor: "#00a0dc")
-            state("stopped_halo_speaker", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/halo_speaker.png")
+            state("paused_halo_speaker", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/halo_speaker.png", backgroundColor: "#cccccc")
+            state("playing_halo_speaker", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/halo_speaker.png", backgroundColor: "#00a0dc")
+            state("stopped_halo_speaker", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/halo_speaker.png")
 
-            state("paused_lenovo_smarttab_m10", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/lenovo_smarttab_m10.png", backgroundColor: "#cccccc")
-            state("playing_lenovo_smarttab_m10", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/lenovo_smarttab_m10.png", backgroundColor: "#00a0dc")
-            state("stopped_lenovo_smarttab_m10", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/lenovo_smarttab_m10.png")
+            state("paused_lenovo_smarttab_m10", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/lenovo_smarttab_m10.png", backgroundColor: "#cccccc")
+            state("playing_lenovo_smarttab_m10", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/lenovo_smarttab_m10.png", backgroundColor: "#00a0dc")
+            state("stopped_lenovo_smarttab_m10", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/lenovo_smarttab_m10.png")
 
-            state("paused_vobot_bunny", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/vobot_bunny.png", backgroundColor: "#cccccc")
-            state("playing_vobot_bunny", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/vobot_bunny.png", backgroundColor: "#00a0dc")
-            state("stopped_vobot_bunny", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/vobot_bunny.png")
+            state("paused_vobot_bunny", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/vobot_bunny.png", backgroundColor: "#cccccc")
+            state("playing_vobot_bunny", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/vobot_bunny.png", backgroundColor: "#00a0dc")
+            state("stopped_vobot_bunny", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/vobot_bunny.png")
 
-            state("paused_logitect_blast", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/logitect_blast.png", backgroundColor: "#cccccc")
-            state("playing_logitect_blast", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/logitect_blast.png", backgroundColor: "#00a0dc")
-            state("stopped_logitect_blast", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/logitect_blast.png")
+            state("paused_logitect_blast", label:"Paused", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/logitect_blast.png", backgroundColor: "#cccccc")
+            state("playing_logitect_blast", label:"Playing", action:"music Player.pause", nextState: "paused", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/logitect_blast.png", backgroundColor: "#00a0dc")
+            state("stopped_logitect_blast", label:"Stopped", action:"music Player.play", nextState: "playing", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/logitect_blast.png")
         }
         valueTile("blank1x1", "device.blank", height: 1, width: 1, inactiveLabel: false, decoration: "flat") {
             state("default", label:'')
@@ -403,87 +403,87 @@ metadata {
             state("btDevicesPaired", label:'Paired Bluetooth Devices:\n${currentValue}')
         }
         standardTile("speechTest", "speechTest", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'speechTest', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/speak_test.png")
+            state("default", label:'', action: 'speechTest', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/speak_test.png")
         }
         standardTile("searchTest", "searchTest", height: 1, width: 2, decoration: "flat") {
             state("default", label:'MusicSearch Test', action: 'searchTest')
         }
         standardTile("sendTestAnnouncement", "sendTestAnnouncement", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'sendTestAnnouncement', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/announcement.png")
+            state("default", label:'', action: 'sendTestAnnouncement', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/announcement.png")
         }
         standardTile("sendTestAnnouncementAll", "sendTestAnnouncementAll", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'sendTestAnnouncementAll', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/announcement_all.png")
+            state("default", label:'', action: 'sendTestAnnouncementAll', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/announcement_all.png")
         }
         standardTile("stopAllDevices", "stopAllDevices", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'stopAllDevices', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/stop_all.png")
+            state("default", label:'', action: 'stopAllDevices', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/stop_all.png")
         }
         standardTile("playWeather", "playWeather", height: 1, width: 1, decoration: "flat") {
-            state("default", action: 'playWeather', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/weather_report.png")
+            state("default", action: 'playWeather', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/weather_report.png")
         }
         standardTile("playSingASong", "playSingASong", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'playSingASong', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/sing_song.png")
+            state("default", label:'', action: 'playSingASong', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/sing_song.png")
         }
         standardTile("playFlashBrief", "playFlashBrief", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'playFlashBrief', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/flash_brief.png")
+            state("default", label:'', action: 'playFlashBrief', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/flash_brief.png")
         }
         standardTile("playGoodNews", "playGoodNews", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'playGoodNews', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/flash_brief.png")
+            state("default", label:'', action: 'playGoodNews', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/flash_brief.png")
         }
         standardTile("sayGoodMorning", "sayGoodMorning", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'sayGoodMorning', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/good_morning.png")
+            state("default", label:'', action: 'sayGoodMorning', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/good_morning.png")
         }
         standardTile("playTraffic", "playTraffic", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'playTraffic', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/play_traffic.png")
+            state("default", label:'', action: 'playTraffic', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/play_traffic.png")
         }
         standardTile("playTellStory", "playTellStory", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'playTellStory', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/story.png")
+            state("default", label:'', action: 'playTellStory', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/story.png")
         }
         standardTile("playJoke", "playJoke", height: 1, width: 1, decoration: "flat") {
-            state("default", action: 'playJoke', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/play_joke.png")
+            state("default", action: 'playJoke', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/play_joke.png")
         }
         standardTile("playFunFact", "playFunFact", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'playFunFact', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/fact.png")
+            state("default", label:'', action: 'playFunFact', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/fact.png")
         }
         standardTile("playCalendarToday", "playCalendarToday", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'playCalendarToday', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/calendar_today.png")
+            state("default", label:'', action: 'playCalendarToday', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/calendar_today.png")
         }
         standardTile("playCalendarTomorrow", "playCalendarTomorrow", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'playCalendarTomorrow', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/calendar_tomorrow.png")
+            state("default", label:'', action: 'playCalendarTomorrow', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/calendar_tomorrow.png")
         }
         standardTile("playCalendarNext", "playCalendarNext", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'playCalendarNext', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/calendar_next.png")
+            state("default", label:'', action: 'playCalendarNext', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/calendar_next.png")
         }
         standardTile("sayWelcomeHome", "sayWelcomeHome", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'sayWelcomeHome', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/welcome_home.png")
+            state("default", label:'', action: 'sayWelcomeHome', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/welcome_home.png")
         }
         standardTile("sayGoodNight", "sayGoodNight", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'sayGoodNight', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/good_night.png")
+            state("default", label:'', action: 'sayGoodNight', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/good_night.png")
         }
         standardTile("sayCompliment", "sayCompliment", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'sayCompliment', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/compliment.png")
+            state("default", label:'', action: 'sayCompliment', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/compliment.png")
         }
         standardTile("volumeUp", "volumeUp", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'volumeUp', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/volume_up.png")
+            state("default", label:'', action: 'volumeUp', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/volume_up.png")
         }
         standardTile("volumeDown", "volumeDown", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'volumeDown', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/volume_down.png")
+            state("default", label:'', action: 'volumeDown', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/volume_down.png")
         }
         standardTile("resetQueue", "resetQueue", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'resetQueue', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/reset_queue.png")
+            state("default", label:'', action: 'resetQueue', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/reset_queue.png")
         }
         standardTile("refresh", "device.refresh", width:1, height:1, decoration: "flat") {
-            state "default", action:"refresh.refresh", icon:"https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/refresh.png"
+            state "default", action:"refresh.refresh", icon:"https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/refresh.png"
         }
         standardTile("doNotDisturb", "device.doNotDisturb", height: 1, width: 1, inactiveLabel: false, decoration: "flat") {
-            state "true", label: '', action: "doNotDisturbOff", nextState: "false", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/dnd_on.png"
-            state "false", label: '', action: "doNotDisturbOn", nextState: "true", icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/dnd_off.png"
+            state "true", label: '', action: "doNotDisturbOff", nextState: "false", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/dnd_on.png"
+            state "false", label: '', action: "doNotDisturbOn", nextState: "true", icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/dnd_off.png"
         }
         standardTile("followUpMode", "device.followUpMode", height: 1, width: 1, inactiveLabel: false, decoration: "flat") {
             state "true", label: 'Followup: On', action: "followUpModeOff", nextState: "false"
             state "false", label: 'Followup: Off', action: "followUpModeOn", nextState: "true"
         }
         standardTile("disconnectBluetooth", "disconnectBluetooth", height: 1, width: 1, decoration: "flat") {
-            state("default", label:'', action: 'disconnectBluetooth', icon: "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/resources/icons/device/disconnect_bluetooth.png")
+            state("default", label:'', action: 'disconnectBluetooth', icon: "https://raw.githubusercontent.com/jskarp5953/echo-speaks/master/resources/icons/device/disconnect_bluetooth.png")
         }
         valueTile("permissions", "device.permissions", height: 2, width: 6, inactiveLabel: false, decoration: "flat") {
             state("permissions", label:'Capabilities:\n${currentValue}')
@@ -3217,14 +3217,14 @@ private postCmdProcess(resp, statusCode, data) {
 /*****************************************************
                 HELPER FUNCTIONS
 ******************************************************/
-String getAppImg(imgName) { return "https://raw.githubusercontent.com/tonesto7/echo-speaks/${isBeta() ? "beta" : "master"}/resources/icons/$imgName" }
+String getAppImg(imgName) { return "https://raw.githubusercontent.com/jskarp5953/echo-speaks/${isBeta() ? "beta" : "master"}/resources/icons/$imgName" }
 Integer versionStr2Int(str) { return str ? str.toString()?.replaceAll("\\.", "")?.toInteger() : null }
 Boolean minVersionFailed() {
     try {
         Integer minDevVer = parent?.minVersions()["echoDevice"] ?: null
         if(minDevVer != null && versionStr2Int(devVersion()) < minDevVer) { return true }
         else { return false }
-    } catch (e) { 
+    } catch (e) {
         return false
     }
 }
